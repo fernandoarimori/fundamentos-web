@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: aliceblue;
+}
+
+h1, h2{
+    color: rgb(83, 80, 80);
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+.navi{
+    border: 1px solid rgb(202, 198, 198);
+    margin: 50px;
+    border-radius: 10px;
+    font-size: 34px;
+    background-color: rgb(128, 128, 128);
+    margin: 0 25%;
+    justify-content: center;
+    
+}
+
+.navi ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.margin{
+    font-size: 2rem;
+    display: flex;
+}
+
+.sobre, .rodape{
+    display: flex;
+    margin: 5% 15%;
+    gap: 3rem;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.sobre .textsobre{
+    font-size: 2.2rem;
+}
+
+.pato{
+    border-radius: 40%;
+    border: 3px solid white;
+    padding: 1px;
+}
