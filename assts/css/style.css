@@ -4,7 +4,7 @@ body{
 }
 
 h1, h2{
-    color: rgb(83, 80, 80);
+    color: rgb(233, 233, 233);
     font-size: 3rem;
     text-align: center;
 }
@@ -12,20 +12,33 @@ h1, h2{
 
 
 .navi{
+
     border: 1px solid rgb(202, 198, 198);
     margin: 50px;
     border-radius: 10px;
     font-size: 34px;
     background-color: rgb(128, 128, 128);
     margin: 0 25%;
-    justify-content: center;
-    
+    justify-content: center; 
+}
+
+.navi li {
+    list-style-type: none; 
 }
 
 .navi ul{
     display: flex;
     justify-content: center;
     gap: 3rem;
+}
+
+.navi ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navi ul a:hover{
+    color: rgb(200, 200, 200);
 }
 
 .margin{
@@ -49,4 +62,18 @@ h1, h2{
     border-radius: 40%;
     border: 3px solid white;
     padding: 1px;
+}
+
+.video{    
+        display: flex;
+        flex-flow: column;
+        margin: 5% 15%;
+        gap: 3rem;
+        align-items: center;
+        font-size: 2rem;
+            
+}
+
+.pezinho{
+    text-align: center;
 }

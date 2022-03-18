@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assts/css/style.css">
 </head>
 <body>
 <nav class="navi">
@@ -31,17 +31,20 @@
          AQUI APENA PARA MARCAÇÃO E EXEMPLO -->
 
         <label for="nome"style="font-size: 2.3rem;">Nome:</label>
-        <input type="text" id="nome"><br>
+        <input type="text" id="nome" onkeyup="valNome()">
+        <div id="txtnome"></div>
     
  
         <label for="email" style="font-size: 2.3rem;">Email:</label>
-        <input type="email" id="email"><br>
+        <input type="email" id="email"  onkeyup="valEmail()">
+        <div id="txtemail"></div>
     
 
         <label for="assunto">Assunto:</label>
-        <textarea type="text" id="assunto" cols="50" rows="20"></textarea>
-        <button>Enviar</button><br>
-    </form>
+        <textarea type="text" id="assunto" cols="50" rows="20" onkeyup="valAss()"></textarea>
+        <div id="txtass"></div>
+        <button onclick="enviar()">Enviar</button>
+
     </div>
 
 
@@ -49,8 +52,9 @@
         Endereço:
     </h2>
     <div class="rodape">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1239.5884314996363!2d-0.22873972381655044!3d51.583321844887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487610dbed6ef733%3A0x660232511f96c813!2sNW4%20Motorcycles!5e0!3m2!1spt-BR!2sbr!4v1647448850926!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1239.5884314996363!2d-0.22873972381655044!3d51.583321844887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487610dbed6ef733%3A0x660232511f96c813!2sNW4%20Motorcycles!5e0!3m2!1spt-BR!2sbr!4v1647448850926!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapzoom()" onmouseout="mapnormal()"></iframe>
     </div>
 
+    <script src="assts/script/script.js"></script>
 </body>
 </html>
